@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../assets/Logo.png" alt="The acronym YAAT hand drawn with a grassy texture" width="250">
+  <img src="/assets/Logo.png" alt="The acronym YAAT hand drawn with a grassy texture" width="250">
   <br>
   <a href="https://github.com/ctrl-shift-markus/YAAT/releases">
     <img src="https://img.shields.io/github/v/release/ctrl-shift-markus/YAAT?color=41D800&amp;style=flat" alt="Version">
@@ -31,7 +31,7 @@ If it won't pass these requirements locally, when you try to open a PR the statu
 To submit a PR:
 
 1. Create a new issue (if required) describing your change and label it, making sure it's not a duplicate of an existing one
-2. Fork YAAT, create a new branch (following the [conventional branch](https://conventionalbranch.org/) specification) and add your code
+2. Fork YAAT, create a new branch following [Conventional Branch](https://conventionalbranch.org/) (AI prefixes and invalid names will be rejected) and add your code
 3. Open a PR that closes your issue (by adding `closes #<issue-id>` in the description) and apply the same label
 4. Fix any issues flagged by status checks
 5. Wait for your PR to be reviewed and merged
