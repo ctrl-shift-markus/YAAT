@@ -49,3 +49,5 @@ The following screenshot shows every command of YAAT and how to use it:
 ## License
 
 YAAT is licensed under the [GNU General Public License v3.0](LICENSE).
+
+&nbsp;
