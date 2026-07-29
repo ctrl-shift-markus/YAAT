@@ -1,0 +1,2 @@
+# Enforce LF only to prevent Go breaking and git diff noise
+* text=auto eol=lf
