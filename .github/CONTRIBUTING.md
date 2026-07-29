@@ -29,8 +29,7 @@ If it won't pass these requirements locally, when you try to open a PR the statu
 ### How to Submit
 
 To submit a PR:
-
-1. Create a new issue (if required) describing your change and label it, making sure it's not a duplicate of an existing one
+1. For larger or time-consuming changes, open an issue before writing code so you don't waste your time. Ensure it isn't a duplicate and apply the correct label.
 2. Fork YAAT, create a new branch following [Conventional Branch](https://conventionalbranch.org/) (AI prefixes and invalid names will be rejected) and add your code
 3. Open a PR that closes your issue (by adding `closes #<issue-id>` in the description) and apply the same label
 4. Fix any issues flagged by status checks
@@ -43,3 +42,5 @@ If you've found a bug or have an idea for a new feature but don't want to contri
 ## License
 
 By contributing to YAAT, you agree that your contribution(s) will be licensed under the [GNU General Public License v3.0](LICENSE).
+
+&nbsp;
