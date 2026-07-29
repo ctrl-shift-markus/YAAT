@@ -23,3 +23,5 @@ YAAT is currently on v1.0.0, which is the only release and supported version.
 ## Vulnerabilities
 
 If you find a vulnerability, please **do not open a new issue**! Instead, report a [security advisory](https://github.com/ctrl-shift-markus/yaat/security/advisories).
+
+&nbsp;
