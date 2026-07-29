@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../assets/Logo.png" alt="The acronym YAAT hand drawn with a grassy texture" width="250">
+  <img src="/assets/Logo.png" alt="The acronym YAAT hand drawn with a grassy texture" width="250">
   <br>
   <a href="https://github.com/ctrl-shift-markus/YAAT/releases">
     <img src="https://img.shields.io/github/v/release/ctrl-shift-markus/YAAT?color=41D800&amp;style=flat" alt="Version">
