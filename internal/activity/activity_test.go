@@ -4,34 +4,24 @@ import (
 	"testing"
 )
 
-func TestFormatDurationMinutes(t *testing.T) {
-	formattedDuration := FormatDuration(24)
-
-	if formattedDuration != "24m" {
-		t.Errorf("Expected %q, got %q", "24m", formattedDuration)
+func TestFormatDuration(t *testing.T) {
+	tests := []struct {
+		name     string
+		input    int
+		expected string
+	}{
+		{"negative", -24, "0m"},
+		{"zero", 0, "0m"},
+		{"minutes", 24, "24m"},
+		{"hours", 120, "2h"},
+		{"mixed", 124, "2h 4m"},
 	}
-}
-
-func TestFormatDurationHours(t *testing.T) {
-	formattedDuration := FormatDuration(120)
-
-	if formattedDuration != "2h" {
-		t.Errorf("Expected %q, got %q", "2h", formattedDuration)
-	}
-}
-
-func TestFormatDurationZero(t *testing.T) {
-	formattedDuration := FormatDuration(0)
-
-	if formattedDuration != "0m" {
-		t.Errorf("Expected %q, got %q", "0m", formattedDuration)
-	}
-}
-
-func TestFormatDurationHoursAndMinutes(t *testing.T) {
-	formattedDuration := FormatDuration(124)
-
-	if formattedDuration != "2h 4m" {
-		t.Errorf("Expected %q, got %q", "2h 4m", formattedDuration)
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := FormatDuration(tt.input)
+			if got != tt.expected {
+				t.Errorf("Expected %q, got %q", tt.expected, got)
+			}
+		})
 	}
 }
