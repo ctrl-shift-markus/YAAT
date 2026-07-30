@@ -2,21 +2,25 @@ package activity
 
 import "fmt"
 
+// Item represents a logged activity item
 type Item struct {
 	ID          int    `json:"id"`
 	Description string `json:"description"`
 	Duration    int    `json:"duration"`
 }
 
-func FormatDuration(duration int) string {
+// FormatDuration formats a duration in minutes into a formatted, human-readable string
+func FormatDuration(durationInMin int) string {
 	switch {
-	case duration < 60:
-		return fmt.Sprintf("%dm", duration)
-	case duration%60 == 0:
-		return fmt.Sprintf("%dh", duration/60)
+	case durationInMin <= 0:
+		return "0m"
+	case durationInMin < 60:
+		return fmt.Sprintf("%dm", durationInMin)
+	case durationInMin%60 == 0:
+		return fmt.Sprintf("%dh", durationInMin/60)
 	default:
-		hours := duration / 60
-		minutes := duration % 60
+		hours := durationInMin / 60
+		minutes := durationInMin % 60
 		return fmt.Sprintf("%dh %dm", hours, minutes)
 
 	}
